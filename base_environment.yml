@@ -1,0 +1,19 @@
+  dependencies:
+  
+  # Formatting, refactoring, linting
+  - black # Auto code formatter https://github.com/psf/black
+  - pylint # Static code analysis https://www.pylint.org/
+  # - rope # Code refactoring https://github.com/python-rope/rope
+
+  # Testing and automation
+  - cookiecutter # Create project from git template https://github.com/cookiecutter/cookiecutter 
+
+  # Jupyter 
+  - inkscape
+  - ipykernel
+  - ipywidgets
+  - jupyter
+  - jupyterlab
+  # - jupytext
+  - nodejs
+  # - papermill

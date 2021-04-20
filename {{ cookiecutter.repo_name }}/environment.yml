@@ -1,0 +1,74 @@
+name: "{{ cookiecutter.repo_name }}"
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.9
+  
+  # Formatting, refactoring, linting
+  - black # Auto code formatter https://github.com/psf/black
+  - pylint # Static code analysis https://www.pylint.org/
+  - rope # Code refactoring https://github.com/python-rope/rope
+
+  # Testing and automation
+  - cookiecutter # Create project from git template https://github.com/cookiecutter/cookiecutter 
+  # - great-expectations # Pipeline tests for data https://github.com/great-expectations/great_expectations
+  - hypothesis
+  # - marshmallow # Data marshalling & schema validation https://marshmallow.readthedocs.io
+  # - prefect # 
+  # - pydantic
+  # - pysnooper
+  - pytest
+  # - pytest-xdist
+
+  # Jupyter 
+  # - inkscape
+  - ipykernel
+  # - ipywidgets
+  - jupyter
+  - jupyterlab
+  # - jupytext
+  - nodejs
+  # - papermill
+
+  # Visualisation
+  # - altair
+  - matplotlib
+  # - pdvega  # pandas plotting API rendered in vegalite! https://github.com/altair-viz/pdvega
+  - seaborn
+
+  # Data science
+  # - dask
+  - numpy
+  - pandas
+  - pandas-profiling  # df.describe() has nothing on this!
+  - scikit-learn
+  - scipy
+
+  # Database
+  - openpyxl
+  - pyodbc
+  - sqlalchemy
+
+  # I/O
+  - beautifulsoup4
+  - lxml
+  - tabula-py
+  - xlrd
+  
+  # Security
+  - python-dotenv
+
+  # Command line 
+
+  - tqdm
+
+  # Pip
+  - pip
+  - pip:
+    - --editable .
+
+
