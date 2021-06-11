@@ -70,5 +70,6 @@ dependencies:
   - pip
   - pip:
     - --editable .
+    - dsp_utils
 
 
