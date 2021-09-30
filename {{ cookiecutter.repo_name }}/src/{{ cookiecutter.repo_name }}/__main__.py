@@ -4,13 +4,23 @@ import click
 
 from box import Box
 
-@click.command()
-@click.argument("config_path")
-def run(config_path=Path("./config.yml")):
-    # Read in yaml file
-    with open(config_path, "r") as ymlfile:
-        config = Box(yaml.safe_load(ymlfile))
-    print(f"Hello {config.project_name}!")
 
-if __name__ == "__main__”"
+# Inspired by https://medium.com/bcggamma/welcome-to-the-big-leagues-b9038648054f
+# and also by https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82
+
+@click.command()
+@click.option("--config_path", default="./config.yml")
+def run(config_path):
+    # Read in yaml file
+    with open(Path(config_path), "r") as ymlfile:  
+        # Use Box to allow dot notation for config
+        config = Box(
+            yaml.safe_load(ymlfile)
+        )  
+    print(
+        f"Hello {config.project_name}!"
+    )  # Check config is working using friendly message!
+
+
+if __name__ == "__main__":
     run()
