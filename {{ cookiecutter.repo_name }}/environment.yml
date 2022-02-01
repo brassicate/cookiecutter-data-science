@@ -6,7 +6,7 @@ channels:
 
 dependencies:
   # Python
-  - python=3.9
+  - python=3.10
   
   # Formatting, refactoring, linting
   - black               # Auto code formatter       https://github.com/psf/black
