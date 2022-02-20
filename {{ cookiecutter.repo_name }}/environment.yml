@@ -12,10 +12,12 @@ dependencies:
   - black               # Auto code formatter       https://github.com/psf/black
   - pylint              # Static code analysis      https://www.pylint.org/
   - rope                # Code refactoring          https://github.com/python-rope/rope
+  - rich
 
   # Config
-  - python-box          # Safe dot notation for dicts     
-  - python-dotenv       # Environment variables from .env file
+  # - python-box          # Safe dot notation for dicts     
+  # - python-dotenv       # Environment variables from .env file
+  - gitpython
 
   # Testing and automation
   - great-expectations  # Pipeline tests for data   https://github.com/great-expectations/great_expectations
@@ -45,7 +47,7 @@ dependencies:
   # - dask
   - numpy
   - pandas
-  - pandas-profiling  # df.describe() has nothing on this!
+  # - pandas-profiling  # df.describe() has nothing on this!
   - scikit-learn
   - scipy
 
@@ -69,6 +71,6 @@ dependencies:
   - pip
   - pip:
     - --editable .
-  #  - dsp_utils
+    - --editable %homedrive%%homepath%\repos\dsp_data_utils
 
 
