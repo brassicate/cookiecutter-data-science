@@ -71,6 +71,6 @@ dependencies:
   - pip
   - pip:
     - --editable .
-    - --editable %homedrive%%homepath%\repos\dsp_data_utils
+
 
 
