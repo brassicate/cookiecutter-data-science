@@ -15,14 +15,14 @@ dependencies:
   - rich
 
   # Config
-  # - python-box          # Safe dot notation for dicts     
+  - python-box          # Safe dot notation for dicts     
   # - python-dotenv       # Environment variables from .env file
   - gitpython
 
   # Testing and automation
   - great-expectations  # Pipeline tests for data   https://github.com/great-expectations/great_expectations
   - hypothesis          # Property-based testing    https://hypothesis.readthedocs.io/en/latest/
-  - prefect # 
+  # - prefect # 
   - pydantic
   # - pysnooper
   - pytest

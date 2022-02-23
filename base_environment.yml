@@ -1,5 +1,6 @@
   dependencies:
-  
+  - mamba # It's much faster than conda!
+
   # Formatting, refactoring, linting
   - black # Auto code formatter https://github.com/psf/black
   - pylint # Static code analysis https://www.pylint.org/
