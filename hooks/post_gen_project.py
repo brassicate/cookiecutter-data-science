@@ -8,4 +8,8 @@ subprocess.call(['git', 'commit', '-m', 'Initial commit'])
 
 # * Create new conda environment
 # TODO Check if it exists already!
-subprocess.call(["conda", "env", "create", "-f", "environment.yml"])
+try:
+    import mamba
+    subprocess.call(["mamba", "env", "create", "-f", "environment.yml"])|
+except:
+    subprocess.call(["conda", "env", "create", "-f", "environment.yml"])
