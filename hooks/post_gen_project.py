@@ -10,6 +10,8 @@ subprocess.call(['git', 'commit', '-m', 'Initial commit'])
 # TODO Check if it exists already!
 try:
     import mamba
-    subprocess.call(["mamba", "env", "create", "-f", "environment.yml"])|
+    print("Mamba exists in base env")
+    subprocess.call(["mamba", "env", "create", "-f", "environment.yml"])
 except:
+    print("Couldn't do the whole mamba thing :(")
     subprocess.call(["conda", "env", "create", "-f", "environment.yml"])
